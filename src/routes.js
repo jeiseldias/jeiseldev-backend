@@ -9,6 +9,7 @@ routes.get('/', (request, response) => {
     })
 });
 
-routes.post('/portfolio', PortfolioController.index);
+routes.get('/portfolio', PortfolioController.index);
+routes.post('/portfolio', PortfolioController.create);
 
 module.exports = routes;
